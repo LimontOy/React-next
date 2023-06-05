@@ -1,0 +1,37 @@
+.pages-article {
+    background-color: #fff;
+    height: 100vh;
+    &-header {
+        position: relative;
+        &-title {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: .24rem;
+            text-align: center;
+            color: #fff;
+            font-weight: 600;
+            line-height: .42rem;
+        }
+    }
+    &-main {
+        &-title {
+            margin-top: .14rem;
+            display: flex;
+            justify-content: center;
+            @include nFont(16 #000 600);
+            &-border {
+                height: .04rem;
+                width: .6rem;
+                background: #CC141C;
+            }
+        }
+        &-des {
+            padding: .18rem .12rem 0 .13rem;
+            @include nFont(12 #7A7A7A 24);
+            text-align: center;
+        }
+    }
+}

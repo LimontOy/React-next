@@ -1,0 +1,78 @@
+// 公共类
+.h100 {height: 100%}
+.w100 {width: 100%}
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// 通用属性
+html {
+  font-size: 100 / 375 * 100vw;
+  -webkit-text-size-adjust: 100%;
+  @media screen and (min-width: 375 * 1px) {font-size: 100px};
+}
+body {
+  font-family: avenir, 'PingFangSC-Regular','PingFang SC','Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+  color: #000000;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+div, a {
+  box-sizing: border-box;
+  outline: none;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-size: inherit;
+  -webkit-appearance: none;
+}
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  &.flex-1 {flex: 1}
+}
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: inherit;
+
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+ul, li {list-style: none;}
+i, em {font-style: normal;}
+#ie9-tips {
+  height: 46px;
+  line-height: 46px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+#ie9-tips a {
+  color: #fff;
+  text-decoration: underline
+}
+#hundsun-iframe {display: none}
+//年月选中/滑过样式
+.el-year-table td .cell:hover, .el-year-table td.current:not(.disabled) .cell,.el-year-table td.today .cell,
+.el-month-table td .cell:hover, .el-month-table td.current:not(.disabled) .cell,.el-month-table td.today .cell{
+  color: #fff !important;
+  background-color: #01ccff !important;
+  border-radius: 4px !important;
+  font-size: 15px !important;
+  width: 60px;
+  text-align: center;
+}
