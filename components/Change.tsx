@@ -1,5 +1,5 @@
 "use client"
-export default function LightSwitch() {
+export default function Change() {
     function handleClick() {
         let bodyStyle = document.body.style;
         if (bodyStyle.backgroundColor === 'black') {
